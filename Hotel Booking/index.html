@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hotel Room Booking</title>
+    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"> -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- container -->
+    <div class="container">
+      <!-- iamges and info -->
+      <div class="navbar">
+        <div class="left">
+          <div class="imog">
+            <i id="heart1" class="fa-solid fa-heart"></i>
+            <p class="heart">Most Loved</p>
+          </div>
+          <p id="p2" class="p1">9 rooms left</p>
+        </div>
+        <div class="right">
+          <h2>Lotus Suite</h2>
+          <p>
+            TV | Air Conditioning | Wi-fi | Electronic Safe | Tea/Coffee |
+            Breakfast
+          </p>
+          <div class="p2">
+            <p><i class="fa-solid fa-people-group"></i> 3 Peoples</p>
+            <p><i class="fa-solid fa-bed"></i> King Size</p>
+          </div>
+          <a id="discount" class="a1" href="#">SUMMER25, PROMO10</a>
+        </div>
+      </div>
+      <hr />
+      <!-- Room info -->
+      <div class="room-info" id="info1">
+        <div class="room1">
+          <h2>AC Room Only</h2>
+          <a href="#">VIEW DETAILS</a>
+        </div>
+        <div class="room4 info1">
+          <!-- negative button -->
+          <button onclick="increment1()">
+            <i class="fa-sharp fa-solid fa-circle-plus"></i>
+          </button>
+          <div id="counter1" class="font-bold">0</div>
+          <!-- positive button -->
+          <button onclick="decrement1()">
+            <i class="fa-solid fa-circle-minus"></i>
+          </button>
+        </div>
+        <div class="price">
+          <div class="top1" active1>
+            <p>INR 14,000</p>
+          <i class="fa fa-info-circle" aria-hidden="true"></i>
+          </div>
+          <h4 id="price1">₹ 14,000/night</h4>
+          <div class="bottom1" active2>
+            <p>Non Refundable</p>
+            <i class="fa fa-info-circle" aria-hidden="true"></i>
+          </div>
+          
+        </div>
+        
+      </div>
+      <div class="apply">
+        <p>*Applied<a href="#" class="ap1">SUMMER25</a></p>
+      </div>
+      <hr />
+
+      <div class="room-info" id="info2">
+        <div class="room1">
+          <h2>AC Room With Breakfast & Dinner</h2>
+          <a href="#">VIEW DETAILS</a>
+        </div>
+        <div class="room4">
+          <!-- negative button -->
+          <button onclick="increment2()">
+            <i class="fa-sharp fa-solid fa-circle-plus"></i>
+          </button>
+          <div id="counter2" class="font-bold">0</div>
+          <!-- positive button -->
+          <button onclick="decrement2()">
+            <i class="fa-solid fa-circle-minus"></i>
+          </button>
+        </div>
+        <div class="price">
+          <div class="top2" active3>
+            <p>INR 15,000</p>
+          <i class="fa fa-info-circle" aria-hidden="true"></i>
+          </div>
+          <h4 id="price2">₹ 15,000/night</h4>
+          <div class="bottom2" active4>
+            <p>Non Refundable</p>
+            <i class="fa fa-info-circle" aria-hidden="true"></i>
+          </div>
+        </div>
+      </div>
+      <div class="apply">
+        <p>*Applied<a href="#" class="ap2">SUMMER25</a></p>
+      </div>
+      <hr />
+
+      <div class="room-info" id="info3">
+        <div class="room1">
+          <h2>Non AC Room With Breakfast</h2>
+          <a href="#">VIEW DETAILS</a>
+        </div>
+        <div class="room4 info2">
+          <!-- negative button -->
+          <button onclick="increment3()">
+            <i class="fa-sharp fa-solid fa-circle-plus"></i>
+          </button>
+          <div id="counter3" class="font-bold">0</div>
+          <!-- positive button -->
+          <button onclick="decrement3()">
+            <i class="fa-solid fa-circle-minus"></i>
+          </button>
+        </div>
+        <div class="price">
+          <div class="top3" active5>
+            <p>INR 17,000</p>
+          <i class="fa fa-info-circle" aria-hidden="true"></i>
+          </div>
+          <h4 id="price3">₹ 17,000/night</h4>
+          <div class="bottom3" active6>
+            <p>Non Refundable</p>
+            <i class="fa fa-info-circle" aria-hidden="true"></i>
+          </div>
+        </div>
+      </div>
+      <div class="apply">
+        <p>*Applied<a href="#" class="ap3">SUMMER25</a></p>
+      </div>
+      <hr />
+      <!-- View All -->
+      <div class="view-all">
+        <a href="#">VIEW ALL</a>
+      </div>
+    </div>
+    <script src="https://kit.fontawesome.com/58a810656e.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>

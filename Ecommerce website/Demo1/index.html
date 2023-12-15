@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html ng-app="myApp"> <!-- Define the AngularJS application -->
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ECOMMERCE WEBSITE</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Catamaran:wght@200&family=Courgette&family=Dancing+Script:wght@700&family=Edu+TAS+Beginner:wght@700&family=Lato:wght@300;900&family=Mukta:wght@700&family=Mulish:wght@300&family=Open+Sans&family=PT+Sans:ital,wght@1,700&family=Poppins:wght@300&family=Raleway:wght@100&family=Roboto&family=Roboto+Condensed:wght@700&family=Roboto+Slab&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/f30fac2c61.js" crossorigin="anonymous"></script>
+</head>
+<body ng-controller="myController"> <!-- Attach the AngularJS controller -->
+    <div class="container" id="container">
+        <!-- navbar -->
+        <nav>
+            <div class="logo">
+                <h1>Shoppy</h1>
+            </div>
+            <ul>
+                <li><a ng-click="shops()" ng-class="{ 'active': shopColor }">Home</a></li>
+                <li><a href="#shop" id="shops" ng-click="shops()" ng-class="{ 'active': shopColor }">Shop</a></li>
+                <li><a href="#review" id="reviews" ng-click="reviews()" ng-class="{ 'active': reviewColor }">Review</a></li>
+                <li><a href="#blog" id="blogs" ng-click="blogs()" ng-class="{ 'active': blogColor }">Blog</a></li>
+                <li><a href="#contact" id="contacts" ng-click="contacts()" ng-class="{ 'active': contactColor }">Contact</a></li>
+            </ul>
+            <div class="icon" ng-click="toggleNav()">
+                <i ng-class="barClass"></i>
+            </div>
+        </nav>
+
+        <!-- main -->
+        <div class="main">
+            <div class="mainText">
+                <h2>Fashion Hub</h2>
+                <h1>Fashion For Always</h1>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nobis, maxime reprehenderit.</p>
+                <button>Explore</button>
+            </div>
+            <img src="images/main.png" alt="">
+        </div>
+
+        <!-- card -->
+        <div class="shop" id="shop">
+            <div class="head">
+                <h2>Trending <span>Cloth's</span></h2>
+            </div>
+            <div class="cards">
+                <div class="crd" ng-click="showItemPage()">
+                    <img src="images/c6.webp" alt="">
+                    <h3>top</h3>
+                    <div class="rate">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                    <h3>$221 : Only</h3>
+                </div>
+                <!-- Add similar card elements here -->
+            </div>
+        </div>
+
+        <div class="cards">
+            <!-- Add more card elements here -->
+        </div>
+
+        <!-- review -->
+        <div class="customer" id="review">
+            <div class="head">
+                <h2>Customer <span>Review</span></h2>
+            </div>
+            <div class="reviews">
+                <div class="reviewCard">
+                    <img src="images/m1.jpg" alt="">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing expedita earum accusamus saepe dicta enim neque unde odit?</p>
+                    <button>More.</button>
+                </div>
+                <!-- Add more reviewCard elements here -->
+            </div>
+        </div>
+
+        <!-- blog -->
+        <div class="blog" id="blog">
+            <div class="head">
+                <h2>Read <span>Blogs</span></h2>
+            </div>
+            <div class="blogContainer">
+                <div class="blogCard">
+                    <img src="images/c1.webp" alt="">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem esse expedita possimus aperiam officia. </p>
+                    <a href="https://stylesearch.com/eu/blogs">Read More</a>
+                </div>
+                <!-- Add more blogCard elements here -->
+            </div>
+        </div>
+
+        <!-- contact -->
+        <div class="connect" id="contact">
+            <div class="head">
+                <h2>Contact <span>Us</span></h2>
+            </div>
+            <div class="contact">
+                <input type="text" placeholder="Enter Your Name" id="name"><br>
+                <input type="text" placeholder="Enter Your Mobile Number" id="number"><br>
+                <button ng-click="connect()">Connect</button>
+            </div>
+        </div>
+
+        <!-- footer -->
+        <div class="footer">
+            <div class="text">
+                <h3>Shoppy</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing <br> Dolore eum vero dolorem tempore magni! <br> Inventore deleniti voluptas porro eligendi.</p>
+            </div>
+            <div class="text">
+                <h3>Explore</h3>
+                <p>All</p>
+                <p>Rated</p>
+                <p>Scores</p>
+                <p>Tipes</p>
+                <p>Guide</p>
+            </div>
+            <div class="text">
+                <h3>Connect</h3>
+                <p>Youtube</p>
+                <p>Instagram</p>
+                <p>Twitter</p>
+                <p>Facebook</p>
+                <p>Pintarest</p>
+            </div>
+            <div class="text">
+                <h3>Nitty Gritty</h3>
+                <p>Term & Condition</p>
+                <p>Privacy Policy</p>
+                <p>FAQs</p>
+                <p>Special credits</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="itemPage" ng-show="itemPageVisible">
+        <img id="itemImg" src="" alt="">
+        <div class="content">
+            <h3>Enter Detail :</h3>
+            <input type="text" placeholder="Enter Your Name" id="name"><br>
+            <input type="text" placeholder="Enter Your Address" id="address"><br>
+            <input type="text" placeholder="Enter Your Mobile Number" id="num"><br>
+            <h3>Payment Option :</h3>
+            <select>
+                <option value="Google-Pay">Google-Pay</option>
+                <option value="Phone-Pay">Phone-Pay</option>
+                <option value="Bharat-Pay">Bharat-Pay</option>
+                <option value="Cash on Delivery">Cash on Delivery</option>
+            </select><br>
+            <button ng-click="submitOrder()">Submit</button>
+            <div class="cross" ng-click="showContainer()">✖</div>
+        </div>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular.min.js"></script>
+     <!-- Include AngularJS -->
+     <script src="index.js"></script>
+</body>
+</html>

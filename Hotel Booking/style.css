@@ -1,0 +1,283 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  .container {
+      width: 76vw;
+      height: 695px;
+      margin: 6px;
+      margin-left: 10%;
+      background-color: #FFFFFF;
+      border: 1px solid black;
+      border-radius: 5px;
+      opacity: 0.8;
+  }
+.navbar {
+    display: flex;
+    gap: 40px;
+}
+  
+.left {
+    width: 45%;
+    height: 290px;
+    background-image: url("RoomImage.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: space-between;
+}
+.left i {
+    font-size: 40px;
+    color: white;
+    margin-top: 30px;
+    margin-left: 25px;
+}
+.imog {
+    display: flex;
+    justify-content: space-between;
+    color: white;
+    gap: 10px;
+}
+.heart {
+    color: white;
+    padding-top: 37px;
+    font-size: 23px;
+    font-weight: 900;
+}
+.p1{
+    width: 90px;
+    height: 25px;
+    text-align: center;
+    background-color:white;
+    color: black;
+    border-radius: 12%;
+    margin-top: 40px;
+    margin-right: 25px;
+    padding: 3px;
+    opacity: .7;
+    border: none;
+}
+
+.right {
+    width: 55%;
+    /* height: 200px; */
+    /* margin-left: 40px; */
+    margin-top: 10px;
+    color: gray;
+}
+
+.right h2 {
+    font-size: 60px;
+}
+.right a {
+    display: flex;
+    margin-top: 20%;
+    text-decoration: none;
+    font-weight: 900;
+    font-size: 24px;
+}
+.p2{
+    display: flex;
+    gap: 80px;
+    /* margin-top: 0px; */
+    font-size: 20px;
+    margin-top: 10px;
+}
+
+.room-info {
+    display: flex;
+    justify-content: space-between;
+    /* margin-top: 8px; */
+    margin-left: 24px;
+    margin-right: 20px;
+}
+
+.room1{
+    margin-top: 20px;
+}
+.room1 h2 {
+    font-weight: 600;
+    margin-bottom: 20px;
+    color: #62696b;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+}
+.room1 a {
+    font-weight: 800;
+    text-decoration: none;
+    color:darkgreen;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+}
+
+.room4 {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+}
+.info1 {
+    margin-left: 200px;
+}
+
+.apply {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 270px;
+    margin-bottom: 6px;
+    font-size: 20px;
+    font-weight: 900;
+    /* font-family:sans-serif; */
+}
+.apply a{
+    margin-left: 5px;
+    text-decoration: none;
+}
+.apply p{
+    color: gray;
+}
+
+.room4 {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+}
+
+.info1 {
+    margin-left: 240px;
+}
+.info2 {
+    margin-left: 60px;
+}
+
+button {
+    font-size: 35px;
+    border: none;
+    background-color: transparent;
+}
+.font-bold {
+    font-size: 35px;
+    font-weight: 700;
+}
+
+.view-all {
+    width: 100%;
+    height: 35px;
+    background-color:rgba(201, 197, 202, 0.582);
+    text-align: center;
+    padding-top: 8px;
+    font-size: 18px;
+    font-weight: 700;
+}
+.view-all a {
+    text-decoration: none;
+    color:darkgreen;
+}
+
+/* price */
+.price {
+    /* display: none; */
+    gap: 10px;
+    color: gray;
+    margin-top: 20px;
+}
+
+/* first row of price*/
+.top1 {
+    display: none;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    color: gray;
+    margin-bottom: 5px;
+    margin-left: 26px;
+}
+.top1.active1 {
+   display: flex;
+}
+.top1 p {
+    text-decoration: line-through;
+}
+
+.bottom1 {
+    display: none;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    color: gray;
+    margin-top: 5px;
+}
+
+.bottom1.active2 {
+    display: flex;
+}
+
+/* second row of price*/
+.top2 {
+    display: none;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    color: gray;
+    margin-bottom: 5px;
+    margin-left: 26px;
+}
+.top2.active3 {
+   display: flex;
+}
+.top2 p {
+    text-decoration: line-through;
+}
+
+.bottom2 {
+    display: none;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    color: gray;
+    margin-top: 5px;
+}
+
+.bottom2.active4 {
+    display: flex;
+}
+
+/* third row of price*/
+.top3 {
+    display: none;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    color: gray;
+    margin-bottom: 5px;
+    margin-left: 26px;
+}
+.top3.active5 {
+   display: flex;
+}
+.top3 p {
+    text-decoration: line-through;
+}
+
+.bottom3 {
+    display: none;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    color: gray;
+    margin-top: 5px;
+}
+
+.bottom3.active6 {
+    display: flex;
+}
+
+h4 {
+    /* display: none; */
+    font-size: 22px;
+    /* margin-top: 20px; */
+    margin-right: 10px;
+    color: black;
+}

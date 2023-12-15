@@ -1,0 +1,20 @@
+[
+    {
+        "id":1,
+        "name": "Hardware Repair",
+        "description": "Playing ping pong all night long, everything's all neon and hazy. Yeah, she's so in demand. She's sweet as pie but if you break her heart. But down toearth. It's time to face the music I'm no longer your muse.",
+        "image": "computer.png"
+    },
+    {
+        "id":2,
+        "name": "Virus Removal",
+        "description": "Playing ping pong all night long, everything's all neon and hazy. Yeah, she's so in demand. She's sweet as pie but if you break her heart. But down toearth. It's time to face the music I'm no longer your muse.",
+        "image": "computer.png"
+    },
+    {
+        "id":3,
+        "name": "System Tuneup",
+        "description": "Playing ping pong all night long, everything's all neon and hazy. Yeah, she's so in demand. She's sweet as pie but if you break her heart. But down toearth. It's time to face the music I'm no longer your muse.",
+        "image": "computer.png"
+    }
+]

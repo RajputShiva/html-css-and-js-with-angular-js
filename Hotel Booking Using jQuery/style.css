@@ -1,0 +1,128 @@
+.container {
+    box-shadow: 5px 5px 5px 5px lightgray;
+    border-radius: 10px;
+  }
+  .left {
+    background-image: url('RoomImage.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 320px;
+    border-top-left-radius: 10px;
+    display: flex;
+    justify-content: space-between;
+  }
+  .left i {
+    font-size: 30px;
+    color: white;
+    margin-top: 30px;
+    margin-left: 25px;
+  }
+  .imog {
+    display: flex;
+    justify-content: space-between;
+    color: white;
+    gap: 10px;
+  }
+  .heart {
+    color: white;
+    padding-top: 26px;
+    font-size: 20px;
+    font-weight: 500;
+  }
+  .p1 {
+    width: 100px;
+    height: 30px;
+    text-align: center;
+    background-color: white;
+    color: black;
+    border-radius: 12%;
+    margin-top: 30px;
+    margin-right: 25px;
+    padding: 3px;
+    opacity: 0.7;
+    border: none;
+  }
+  .right {
+    color: gray;
+    margin-top: 10px;
+  }
+  h3 {
+    font-weight: 700;
+  }
+  .right a {
+    display: flex;
+    margin-top: 22%;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 20px;
+  }
+  .p2 {
+    display: flex;
+    gap: 80px;
+    font-size: 20px;
+  }
+  .more {
+    display: flex;
+    gap: 10px;
+    font-weight: 500;
+    font-size: 16px;
+  }
+  .last {
+    color: green;
+    font-size: 17px;
+    font-weight: 600;
+  }
+  /* room details */
+  .room1 {
+    font-size: 20px;
+    font-weight: 700;
+    color: gray;
+  }
+  .room1 a {
+    color: green;
+    font-size: 17px;
+    font-weight: 600;
+  }
+  .buttons {
+    display: flex;
+    gap: 10px;
+    padding-left: 100px;
+  }
+  .room2 p {
+    padding-left: 75px;
+  }
+  button {
+    font-size: 29px;
+    border: none;
+    background-color: transparent;
+  }
+  .font-bold {
+    font-size: 29px;
+    font-weight: 500;
+  }
+  h6 {
+    font-size: 14px;
+    color: gray;
+  }
+  .top {
+    display: none;
+    gap: 10px;
+    padding-left: 35px;
+  }
+  .top.hidden {
+    display: flex;
+  }
+  .top h6 {
+    text-decoration: line-through;
+  }
+  .bottom {
+    display: none;
+    gap: 10px;
+  }
+  .bottom.hidden{
+    display: flex;
+  }
+  .price {
+    margin-top: 23px;
+    font-size: 22px;
+  }

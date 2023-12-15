@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="myModule">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <title>Computer Solution</title>
+    <!-- Bootstrap core CSS -->
+    <link href="bootstrap.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+    <!-- navbar -->
+    <div class="container bg-light mt-2" >
+        <div class="masthead mb-2">
+            <h3 class="text-muted text-center">Computer Solution</h3>
+            <nav>
+                <ul class="nav nav-justified">
+                    <li class="nav-item">
+                        <a class="nav-link btn btn-info mr-2" href="#!main">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link btn btn-info mr-2" href="#!about">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link btn btn-info mr-2" href="#!services">Services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link btn btn-info mr-2" href="#!contact">Contact</a>
+                    </li>
+                </ul>
+            </nav>
+        </div> 
+        
+        <!-- ng-view -->
+        <div ng-controller="MainCtrl">
+            <div ng-view></div>
+        </div> 
+
+        <!-- footer -->
+    <footer class="container mt-2">
+        <p>&copy; Company 2020-2024</p>
+    </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular-route.js"></script>
+    <script src="angularJs.js"></script>
+</body>
+</html>

@@ -1,0 +1,19 @@
+<h2>TEACHERS PAGE</h2>
+<div ng-controller="teacher_ctr">
+    <table class="table table-hover table-striped bg-dark text-white table-bordered">
+        <thead>
+            <tr>
+                <th>NAME</th>
+                <th>AGE</th>
+                <th>QUALIFICATION</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr ng-repeat="item in teachers">
+                <td>{{ item.name }}</td>
+                <td>{{ item.age }}</td>
+                <td>{{ item.qualification }}</td>
+            </tr>
+        </tbody>
+    </table>
+</div>

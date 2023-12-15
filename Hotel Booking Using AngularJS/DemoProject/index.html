@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="hotelApp">
+<head>
+    <title>Hotel Room Booking</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+</head>
+<body ng-controller="hotelController">
+    <div class="container border mt-3">
+        <div class="row">
+            <div class="col-md-5 left">
+                <div class="imog">
+                    <i ng-click="toggleHeartColor()" ng-style="heartStyle" class="fa-solid fa-heart"></i>
+                    <p class="heart">Most Loved</p>
+                </div>
+                <p id="p2" class="p1">{{ roomCount }} rooms left</p>
+            </div>
+            <div class="col-md-7 pl-4 right">
+                <h3>Lotus Suite</h3>
+                <div class="more">
+                    <p>
+                        TV | Air Conditioning | Wi-fi | Electronic Safe | Breakfast |
+                        Tea/Coffee...
+                    </p>
+                    <p class="last">VIEW MORE</p>
+                </div>
+                <div class="p2">
+                    <p><i class="fa-solid fa-people-group"></i> 3 People</p>
+                    <p><i class="fa-solid fa-bed"></i> King Size</p>
+                </div>
+                <a ng-click="toggleDiscount()" class="a1" href="#">SUMMER25, PROMO10</a>
+            </div>
+        </div>
+
+        <div class="row border" ng-repeat="room in rooms">
+            <div class="col-md-5 pt-3">
+                <div class="room1">
+                    <h4>{{ room.title }}</h4>
+                    <a href="#">VIEW DETAILS</a>
+                </div>
+            </div>
+
+            <div class="col-md-5 pt-3">
+                <div class="room2">
+                    <div class="buttons">
+                        <button ng-click="decrementCounter(room)" class="increment-button">
+                            <i class="fa-sharp fa-solid fa-circle-plus"></i>
+                        </button>
+                        <div class="font-bold counter">{{ room.counter }}</div>
+                        <button ng-click="incrementCounter(room)" class="decrement-button">
+                            <i class="fa-solid fa-circle-minus"></i>
+                        </button>
+                    </div>
+                    <p>*Applied<a href="#"> {{ room.discount }}</a></p>
+                </div>
+            </div>
+
+            <div class="col-md-2 pt-2">
+                <div class="top" ng-show="room.showDiscount">
+                    <h6>INR {{ room.discountedPrice }}</h6>
+                    <i class="fa fa-info-circle" aria-hidden="true"></i>
+                </div>
+                <h5 class="price" ng-class="{ 'price': !room.showDiscount }" ng-bind="room.price"></h5>
+                <div class="bottom" ng-show="room.showDiscount">
+                    <h6>Non Refundable</h6>
+                    <i class="fa fa-info-circle" aria-hidden="true"></i>
+                </div>
+            </div>
+        </div>
+        <button type="button" class="btn btn-light btn-sm btn-block">VIEW ALL</button>
+    </div>
+    <script src="https://kit.fontawesome.com/55b67a9f2d.js"></script>
+    <script src="angularjs.js"></script>
+</body>
+</html>

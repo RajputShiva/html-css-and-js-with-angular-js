@@ -1,0 +1,29 @@
+[
+    {
+        "id": 1,
+        "name": "Allahabad Location",
+        "street_address": "33/2A, Tilak Nagar",
+        "city": "Allahabad",
+        "state": "UP",
+        "pin": "211001",
+        "phone": "6306498845"
+    },
+    {
+        "id": 2,
+        "name": "Varanasi Location",
+        "street_address": "41/2A, Ram Nagar",
+        "city": "Varanasi",
+        "state": "UP",
+        "pin": "211022",
+        "phone": "6306492210"
+    },
+    {
+        "id": 3,
+        "name": "Lucknow Location",
+        "street_address": "38/4b, Tilak Nagar",
+        "city": "Lucknow",
+        "state": "UP",
+        "pin": "211035",
+        "phone": "6306495241"
+    }
+]

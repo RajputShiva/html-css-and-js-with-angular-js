@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="myList">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Angular APP</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body ng-controller="myListController">
+    <div class="main">
+      <h1>To-Do List</h1>
+      <div class="addItems">
+        <input type="text" ng-model="newItem" class="addText" placeholder="Add your text"/>
+        <button ng-click="pushItem()">&#10133;</button>
+      </div>
+      <ul>
+        <li ng-repeat="i in items">
+          {{ i }}
+          <span class="del" ng-click="deleteItem()">&#10060;</span>
+        </li>
+      </ul>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+    <script src="angularJs.js"></script>
+  </body>
+</html>
